@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Helmi Sayed Suleiman (HilmiGas) — Software Engineer with honors from Istinye University. Python, C#, C++, Laravel developer and AI systems builder.">
+  <title>HilmiGas | Software Engineer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Game Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  <div class="scroll-progress-label" id="scroll-progress-label">SECTOR 01</div>
+
+  <!-- Particle Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">[</span>HILMIGAS<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link"><span>01.</span>Init</a></li>
+        <li><a href="#about" class="nav-link"><span>02.</span>Profile</a></li>
+        <li><a href="#skills" class="nav-link"><span>03.</span>Skills</a></li>
+        <li><a href="#timeline" class="nav-link"><span>04.</span>Timeline</a></li>
+        <li><a href="#projects" class="nav-link"><span>05.</span>Projects</a></li>
+        <li><a href="#contact" class="nav-link"><span>06.</span>Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <div class="hero-status reveal delay-1">
+          <span class="status-blink"></span>
+          AVAILABLE FOR HIRE — SOFTWARE ENGINEER
+        </div>
+        <h1 class="hero-name reveal delay-2">
+          <span class="glitch" data-text="HELMI">HELMI</span><br>
+          <span class="glitch neon-text" data-text="SULEIMAN">SULEIMAN</span>
+        </h1>
+        <div class="hero-handle reveal delay-3">
+          <span>// </span>@HilmiGas<span> — Software Engineering Graduate</span>
+        </div>
+        <div class="hero-typed-row reveal delay-4">
+          &gt; <span id="typed-text"></span><span class="typed-cursor"></span>
+        </div>
+        <p class="hero-bio reveal delay-4" id="hero-bio-text">
+          Honors graduate from Istinye University. Building AI systems, backend APIs, and full-stack platforms that solve real problems using Python, C#, C++, Laravel & PHP.
+        </p>
+        <div class="hero-btns reveal delay-4">
+          <a href="#contact" class="btn btn-primary">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Contact Me
+          </a>
+          <a href="#" class="btn btn-secondary" id="cv-btn">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <!-- Terminal Card -->
+      <div class="hero-terminal reveal-right">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="terminal-title">helmigas@portfolio:~</span>
+        </div>
+        <div class="terminal-body">
+          <span class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat developer.json</span></span>
+          <span class="t-line">{</span>
+          <span class="t-line t-indent"><span class="t-key">"name"</span>: <span class="t-str">"Helmi Sayed Suleiman"</span>,</span>
+          <span class="t-line t-indent"><span class="t-key">"alias"</span>: <span class="t-str">"HilmiGas"</span>,</span>
+          <span class="t-line t-indent"><span class="t-key">"degree"</span>: <span class="t-str">"B.S. Software Eng. 🏆"</span>,</span>
+          <span class="t-line t-indent"><span class="t-key">"university"</span>: <span class="t-str">"Istinye University"</span>,</span>
+          <span class="t-line t-indent"><span class="t-key">"location"</span>: <span class="t-str">"Istanbul, Turkey"</span>,</span>
+          <span class="t-line t-indent"><span class="t-key">"languages"</span>: [</span>
+          <span class="t-line t-indent" style="padding-left:40px"><span class="t-val">"Python"</span>, <span class="t-val">"C#"</span>, <span class="t-val">"C++"</span>, <span class="t-val">"PHP"</span></span>
+          <span class="t-line t-indent">],</span>
+          <span class="t-line t-indent"><span class="t-key">"frameworks"</span>: [<span class="t-val">"Laravel"</span>],</span>
+          <span class="t-line t-indent"><span class="t-key">"honors"</span>: <span class="t-purple">true</span>,</span>
+          <span class="t-line t-indent"><span class="t-key">"ai_builder"</span>: <span class="t-purple">true</span></span>
+          <span class="t-line">}</span>
+          <span class="t-line t-dim">// output: 0 errors, 1 honor graduate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Profile</div>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal-left">
+          <p class="about-bio" id="about-bio-text">
+            I'm a passionate Software Engineering graduate from Istinye University, where I earned my degree with honors. My journey spans from low-level systems programming in C and C++ to building intelligent AI-powered systems using Python. I thrive at the intersection of clean architecture and real-world problem solving.
+          </p>
+          <div class="about-honors">
+            <div class="honor-icon">🏆</div>
+            <div class="honor-text">
+              <strong>Honor Graduate</strong>
+              <span>B.S. Software Engineering — Istinye University, Istanbul</span>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Languages</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">1+</span>
+              <span class="stat-label">AI Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2k+</span>
+              <span class="stat-label">Hours Coded</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Drive</span>
+            </div>
+          </div>
+        </div>
+        <div class="id-card-wrapper reveal-right">
+          <div class="id-card">
+            <div class="id-card-chip">
+              <div class="id-card-chip-inner"></div>
+              <div class="id-card-chip-inner"></div>
+              <div class="id-card-chip-inner"></div>
+              <div class="id-card-chip-inner"></div>
+            </div>
+            <div class="id-avatar">HS</div>
+            <div class="id-name">Helmi Sayed Suleiman</div>
+            <div class="id-role">Software Engineer</div>
+            <div class="id-divider"></div>
+            <div class="id-field">
+              <span class="id-field-label">Handle</span>
+              <span class="id-field-value">@HilmiGas</span>
+            </div>
+            <div class="id-field">
+              <span class="id-field-label">Degree</span>
+              <span class="id-field-value">B.S. Soft. Eng.</span>
+            </div>
+            <div class="id-field">
+              <span class="id-field-label">University</span>
+              <span class="id-field-value">Istinye Univ.</span>
+            </div>
+            <div class="id-field">
+              <span class="id-field-label">Location</span>
+              <span class="id-field-value">Istanbul, TR</span>
+            </div>
+            <div class="id-field">
+              <span class="id-field-label">Status</span>
+              <span class="id-field-value" style="color: var(--neon-green)">HONOR GRAD ✓</span>
+            </div>
+            <div class="id-barcode"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Technical Arsenal</div>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section id="timeline">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Career Path</div>
+        <h2 class="section-title">Timeline</h2>
+      </div>
+      <div class="timeline-grid">
+        <div class="reveal-left">
+          <div class="timeline-col-title">Experience</div>
+          <div class="timeline" id="experience-container"></div>
+        </div>
+        <div class="reveal-right">
+          <div class="timeline-col-title">Education</div>
+          <div class="timeline" id="education-container"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Showcase</div>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI Systems</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="systems">C / Systems</button>
+        <button class="filter-btn" data-filter="desktop">Desktop</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="reveal-left">
+          <p class="contact-desc">
+            Whether it's a job opportunity, a collaboration, or just connecting with fellow engineers — feel free to reach out. I respond fast.
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-label">Email</span>
+                <a href="mailto:hilmigas@example.com" class="contact-info-val" id="contact-email">hilmigas@example.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-label">Location</span>
+                <span class="contact-info-val" id="contact-location">Istanbul, Turkey</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.523-10-10-10z"/></svg>
+              </div>
+              <div>
+                <span class="contact-info-label">GitHub</span>
+                <a href="https://github.com/HilmiGas" target="_blank" class="contact-info-val">github.com/HilmiGas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Job Opportunity / Collaboration" required>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Tell me what's on your mind..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; cursor:none;">
+              <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+              Send Transmission
+            </button>
+            <div class="form-feedback" id="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-copy" id="footer-copy">&copy; 2026 Helmi Sayed Suleiman — HilmiGas</span>
+      <div class="footer-socials" id="footer-socials"></div>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
