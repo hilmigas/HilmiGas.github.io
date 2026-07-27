@@ -10,7 +10,7 @@ const portfolioData = {
       "Full-Stack Developer"
     ],
     bio: "Software Engineering graduate with honors from Istinye University. Passionate about building intelligent systems, robust backend architectures, and solving complex problems with clean, efficient code. From AI-powered attendance systems to full-stack web applications — I ship things that matter.",
-    email: "hilmigas@example.com",
+    email: "haloomy2002@gmail.com",
     location: "Istanbul, Turkey",
     github: "https://github.com/HilmiGas",
     linkedin: "https://linkedin.com",
