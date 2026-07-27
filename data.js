@@ -13,7 +13,7 @@ const portfolioData = {
     email: "haloomy2002@gmail.com",
     location: "Istanbul, Turkey",
     github: "https://github.com/HilmiGas",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/helmi-sayed-suleiman-8134b8242/",
     cvLink: "#"
   },
   skills: [
@@ -59,17 +59,6 @@ const portfolioData = {
         "Integrated Python + OpenCV-based computer vision pipeline for real-time face detection.",
         "Built a full admin dashboard with Laravel + PHP backend for reporting and management.",
         "Delivered the project with a top academic score, recognized for technical excellence."
-      ]
-    },
-    {
-      role: "Peer Tutor & Lab Assistant",
-      company: "Istinye University – CS Department",
-      location: "Istanbul, Turkey",
-      duration: "2023 - 2024",
-      description: [
-        "Supported undergraduate students in courses covering Algorithms, OOP (C++/C#), and Databases.",
-        "Helped debug student projects and explain complex data structures hands-on.",
-        "Developed practice problem sets for weekly lab sessions."
       ]
     }
   ],
