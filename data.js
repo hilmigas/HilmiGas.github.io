@@ -77,7 +77,99 @@ const portfolioData = {
     }
   ],
   projects: [
-
+    {
+      id: "attendify",
+      title: "Attendify",
+      category: "ai",
+      badge: "⭐ Capstone Project",
+      coDev: "🤝 Co-Developed with @ibrahemassa and @MoBakour",
+      coDevUrl: "https://github.com/MoBakour",
+      role: "AI & Backend Architecture",
+      description: "An intelligent, anti-cheat attendance tracking system achieving real presence validation in under 3 seconds. Built to solve the fundamental problem of proxy attendance through a triple-layer verification architecture.",
+      highlights: [
+        "Cryptographic time-limited tokens to stop photo-sharing cheats",
+        "GPS geofencing via the Haversine formula for physical classroom presence",
+        "Biometric AI face-matching using 512-dim FaceNet embeddings + pgvector cosine distance",
+        "Sub-50ms vector search using HNSW indexing on PostgreSQL"
+      ],
+      tags: [
+        "Go (Gin-Gonic)",
+        "FastAPI",
+        "DeepFace",
+        "React 19",
+        "TypeScript",
+        "React Native (Expo)",
+        "PostgreSQL",
+        "pgvector",
+        "HNSW",
+        "Laravel"
+      ],
+      githubLink: "https://github.com/MoBakour/attendify",
+      liveLink: "#"
+    },
+    {
+      id: "vision-pipeline",
+      title: "Biometric Vision & Detection Engine",
+      category: "ai",
+      badge: "⚡ Computer Vision",
+      description: "High-accuracy face detection and feature extraction service using Python and OpenCV, designed for real-time verification pipelines and automated logging.",
+      highlights: [
+        "Real-time face detection & alignment pipeline with multi-frame verification",
+        "RESTful API interface for seamless integration into web and mobile clients",
+        "Optimized frame processing throughput minimizing CPU/GPU latency"
+      ],
+      tags: [
+        "Python",
+        "OpenCV",
+        "FastAPI",
+        "PyTorch",
+        "REST APIs"
+      ],
+      githubLink: "https://github.com/HilmiGas",
+      liveLink: "#"
+    },
+    {
+      id: "laravel-management",
+      title: "Enterprise Portal & Reporting System",
+      category: "backend",
+      badge: "🛠️ Full-Stack Backend",
+      description: "Robust admin and reporting dashboard built with Laravel & PHP for managing attendance records, automated exports, and role-based access control.",
+      highlights: [
+        "Role-Based Access Control (RBAC) supporting multiple administrative levels",
+        "Automated attendance export pipelines (PDF, Excel, CSV) with audit trails",
+        "Optimized relational database queries supporting heavy analytics loads"
+      ],
+      tags: [
+        "Laravel",
+        "PHP",
+        "MySQL / PostgreSQL",
+        "REST APIs",
+        "Blade / HTML5"
+      ],
+      githubLink: "https://github.com/HilmiGas",
+      liveLink: "#"
+    },
+    {
+      id: "cpp-allocator",
+      title: "High-Speed Memory & Vector Indexer",
+      category: "systems",
+      badge: "💻 Systems & C++",
+      description: "Low-level memory management system and custom vector search data structures implemented in modern C++ for high-performance computing.",
+      highlights: [
+        "Custom memory pool allocation minimizing runtime dynamic allocation overhead",
+        "Efficient nearest-neighbor search algorithm implementation",
+        "Cross-platform CLI tool with strict memory leak verification"
+      ],
+      tags: [
+        "C++",
+        "Algorithms",
+        "Data Structures",
+        "Memory Management",
+        "Git"
+      ],
+      githubLink: "https://github.com/HilmiGas",
+      liveLink: "#"
+    }
   ]
 };
 
