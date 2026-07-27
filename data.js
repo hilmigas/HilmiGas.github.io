@@ -77,43 +77,7 @@ const portfolioData = {
     }
   ],
   projects: [
-    {
-      title: "AI Attendance System",
-      category: "ai",
-      description: "A smart facial-recognition attendance system powered by Python and OpenCV. Automatically marks attendance in real-time using computer vision. Built with a Laravel backend dashboard for management and reporting.",
-      tags: ["Python", "OpenCV", "Laravel", "PHP", "AI", "Computer Vision"],
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop",
-      liveLink: "#",
-      githubLink: "https://github.com/HilmiGas",
-      status: "coming_soon"
-    },
-    {
-      title: "Laravel Web Platform",
-      category: "backend",
-      description: "A full-featured multi-role web application built with Laravel and PHP. Features role-based access control, REST API integration, and advanced database relations with an admin control panel.",
-      tags: ["Laravel", "PHP", "MySQL", "REST API", "Blade"],
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=600&auto=format&fit=crop",
-      liveLink: "#",
-      githubLink: "https://github.com/HilmiGas"
-    },
-    {
-      title: "C++ Algorithm Suite",
-      category: "systems",
-      description: "A comprehensive library of advanced data structures and algorithms implemented from scratch in C++. Includes sorting, graph traversal, dynamic programming, and tree structures with benchmark comparisons.",
-      tags: ["C++", "Algorithms", "Data Structures", "Systems"],
-      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=600&auto=format&fit=crop",
-      liveLink: "#",
-      githubLink: "https://github.com/HilmiGas"
-    },
-    {
-      title: "C# Desktop Manager",
-      category: "desktop",
-      description: "A Windows desktop application developed with C# and .NET. Features intuitive task and data management UI, local database integration using Entity Framework, and export functionality.",
-      tags: ["C#", ".NET", "WPF", "Entity Framework", "SQLite"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=600&auto=format&fit=crop",
-      liveLink: "#",
-      githubLink: "https://github.com/HilmiGas"
-    }
+
   ]
 };
 
